@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+import "Protos/queryusers.proto";
+
+option csharp_namespace = "ScholarPortal.Protos.Employees";
+
+package QueryEmployees;
+
+service QueryEmployeesService {
+    rpc IsValidEmployee (EmployeeRequest) returns (EmployeeIdModel);
+    rpc GetEmployee (EmployeeRequest) returns (EmployeeModel);
+    rpc GetEmployees (EmployeesRequest) returns (EmployeeListModel);
+}
+
+message EmployeeRequest {
+    string employeeId = 1;
+}
+
+message EmployeesRequest {
+    repeated EmployeeRequest employeeIds = 1;
+}
+
+message EmployeeIdModel {
+    string id = 1;
+}
+
+message EmployeeModel {
+    string id = 1;
+    string title = 2;
+    enum EmployeeState {
+        UNKNOWN = 0;
+        VALID = 1;
+        INCOMPLETE = 2;
+        SUSPICIOUS = 3;
+        LOCKED = 4;
+        INACTIVE = 5;
+    }
+    EmployeeState state = 3;
+    google.protobuf.Timestamp created = 4;
+    QueryUsers.UserModel user = 5;
+}
+
+message EmployeeListModel {
+    repeated EmployeeModel employees = 1;
+}

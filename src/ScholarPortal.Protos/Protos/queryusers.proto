@@ -2,17 +2,26 @@ syntax = "proto3";
 
 import "google/protobuf/timestamp.proto";
 
-option csharp_namespace = "ScholarPortal.Services.Identity.Infrastructure";
+option csharp_namespace = "ScholarPortal.Protos.Users";
 
 package QueryUsers;
 
 service QueryUsersService {
-    
+    rpc IsValidUser (UserRequest) returns (UserIdModel);
     rpc GetUser (UserRequest) returns (UserModel);
+    rpc GetUsers (UsersRequest) returns (UsersModel);
 }
 
 message UserRequest {
-    string identityId  = 1;
+    string identityId = 1;
+}
+
+message UsersRequest {
+    repeated UserRequest ids = 1;
+}
+
+message UserIdModel {
+    string identityId = 1;
 }
 
 message UserModel {
@@ -23,11 +32,29 @@ message UserModel {
     google.protobuf.Timestamp birthdate = 5;
     string email = 6;
     google.protobuf.Timestamp created = 7;
-    string status = 8;
+    enum UserStatusEnumModel {
+        UNKNOWN = 0;
+        CREATED = 1;
+        REGISTERED = 2;
+        INVALID = 3;
+        SUSPENDED = 4;
+    };
+    UserStatusEnumModel status = 8;
     string employeeId = 9;
     message UserRolesModel {
-        string role = 1;
+        enum UserRolesEnumModel {
+            STUDENT = 0;
+            STAFF = 1;
+            FACULTY = 2;
+            ADMINISTRATOR = 3;
+            SUPERADMINISTRATOR = 4;
+        };
+        UserRolesEnumModel role = 1;
     }
     
     repeated UserRolesModel roles = 10;
+}
+
+message UsersModel {
+    repeated UserModel users = 1;
 }
