@@ -27,8 +27,8 @@ namespace ScholarPortal.Protos.Users {
             "ChdQcm90b3MvcXVlcnl1c2Vycy5wcm90bxIKUXVlcnlVc2VycxofZ29vZ2xl",
             "L3Byb3RvYnVmL3RpbWVzdGFtcC5wcm90byIhCgtVc2VyUmVxdWVzdBISCgpp",
             "ZGVudGl0eUlkGAEgASgJIjQKDFVzZXJzUmVxdWVzdBIkCgNpZHMYASADKAsy",
-            "Fy5RdWVyeVVzZXJzLlVzZXJSZXF1ZXN0IiEKC1VzZXJJZE1vZGVsEhIKCmlk",
-            "ZW50aXR5SWQYASABKAki7gQKCVVzZXJNb2RlbBISCgppZGVudGl0eUlkGAEg",
+            "Fy5RdWVyeVVzZXJzLlVzZXJSZXF1ZXN0IiEKDlVzZXJWYWxpZE1vZGVsEg8K",
+            "B2lzVmFsaWQYASABKAgi7gQKCVVzZXJNb2RlbBISCgppZGVudGl0eUlkGAEg",
             "ASgJEhEKCWZpcnN0TmFtZRgCIAEoCRIQCghsYXN0TmFtZRgDIAEoCRIcChRz",
             "b2NpYWxTZWN1cml0eU51bWJlchgEIAEoCRItCgliaXJ0aGRhdGUYBSABKAsy",
             "Gi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wEg0KBWVtYWlsGAYgASgJEisK",
@@ -43,18 +43,18 @@ namespace ScholarPortal.Protos.Users {
             "QVRPUhAEIlsKE1VzZXJTdGF0dXNFbnVtTW9kZWwSCwoHVU5LTk9XThAAEgsK",
             "B0NSRUFURUQQARIOCgpSRUdJU1RFUkVEEAISCwoHSU5WQUxJRBADEg0KCVNV",
             "U1BFTkRFRBAEIjIKClVzZXJzTW9kZWwSJAoFdXNlcnMYASADKAsyFS5RdWVy",
-            "eVVzZXJzLlVzZXJNb2RlbDLNAQoRUXVlcnlVc2Vyc1NlcnZpY2USPwoLSXNW",
-            "YWxpZFVzZXISFy5RdWVyeVVzZXJzLlVzZXJSZXF1ZXN0GhcuUXVlcnlVc2Vy",
-            "cy5Vc2VySWRNb2RlbBI5CgdHZXRVc2VyEhcuUXVlcnlVc2Vycy5Vc2VyUmVx",
-            "dWVzdBoVLlF1ZXJ5VXNlcnMuVXNlck1vZGVsEjwKCEdldFVzZXJzEhguUXVl",
-            "cnlVc2Vycy5Vc2Vyc1JlcXVlc3QaFi5RdWVyeVVzZXJzLlVzZXJzTW9kZWxC",
-            "HaoCGlNjaG9sYXJQb3J0YWwuUHJvdG9zLlVzZXJzYgZwcm90bzM="));
+            "eVVzZXJzLlVzZXJNb2RlbDLQAQoRUXVlcnlVc2Vyc1NlcnZpY2USQgoLSXNW",
+            "YWxpZFVzZXISFy5RdWVyeVVzZXJzLlVzZXJSZXF1ZXN0GhouUXVlcnlVc2Vy",
+            "cy5Vc2VyVmFsaWRNb2RlbBI5CgdHZXRVc2VyEhcuUXVlcnlVc2Vycy5Vc2Vy",
+            "UmVxdWVzdBoVLlF1ZXJ5VXNlcnMuVXNlck1vZGVsEjwKCEdldFVzZXJzEhgu",
+            "UXVlcnlVc2Vycy5Vc2Vyc1JlcXVlc3QaFi5RdWVyeVVzZXJzLlVzZXJzTW9k",
+            "ZWxCHaoCGlNjaG9sYXJQb3J0YWwuUHJvdG9zLlVzZXJzYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::ScholarPortal.Protos.Users.UserRequest), global::ScholarPortal.Protos.Users.UserRequest.Parser, new[]{ "IdentityId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ScholarPortal.Protos.Users.UsersRequest), global::ScholarPortal.Protos.Users.UsersRequest.Parser, new[]{ "Ids" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::ScholarPortal.Protos.Users.UserIdModel), global::ScholarPortal.Protos.Users.UserIdModel.Parser, new[]{ "IdentityId" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::ScholarPortal.Protos.Users.UserValidModel), global::ScholarPortal.Protos.Users.UserValidModel.Parser, new[]{ "IsValid" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::ScholarPortal.Protos.Users.UserModel), global::ScholarPortal.Protos.Users.UserModel.Parser, new[]{ "IdentityId", "FirstName", "LastName", "SocialSecurityNumber", "Birthdate", "Email", "Created", "Status", "EmployeeId", "Roles" }, null, new[]{ typeof(global::ScholarPortal.Protos.Users.UserModel.Types.UserStatusEnumModel) }, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::ScholarPortal.Protos.Users.UserModel.Types.UserRolesModel), global::ScholarPortal.Protos.Users.UserModel.Types.UserRolesModel.Parser, new[]{ "Role" }, null, new[]{ typeof(global::ScholarPortal.Protos.Users.UserModel.Types.UserRolesModel.Types.UserRolesEnumModel) }, null, null)}),
             new pbr::GeneratedClrTypeInfo(typeof(global::ScholarPortal.Protos.Users.UsersModel), global::ScholarPortal.Protos.Users.UsersModel.Parser, new[]{ "Users" }, null, null, null, null)
           }));
@@ -313,11 +313,11 @@ namespace ScholarPortal.Protos.Users {
 
   }
 
-  public sealed partial class UserIdModel : pb::IMessage<UserIdModel> {
-    private static readonly pb::MessageParser<UserIdModel> _parser = new pb::MessageParser<UserIdModel>(() => new UserIdModel());
+  public sealed partial class UserValidModel : pb::IMessage<UserValidModel> {
+    private static readonly pb::MessageParser<UserValidModel> _parser = new pb::MessageParser<UserValidModel>(() => new UserValidModel());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public static pb::MessageParser<UserIdModel> Parser { get { return _parser; } }
+    public static pb::MessageParser<UserValidModel> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
@@ -330,55 +330,55 @@ namespace ScholarPortal.Protos.Users {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public UserIdModel() {
+    public UserValidModel() {
       OnConstruction();
     }
 
     partial void OnConstruction();
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public UserIdModel(UserIdModel other) : this() {
-      identityId_ = other.identityId_;
+    public UserValidModel(UserValidModel other) : this() {
+      isValid_ = other.isValid_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public UserIdModel Clone() {
-      return new UserIdModel(this);
+    public UserValidModel Clone() {
+      return new UserValidModel(this);
     }
 
-    /// <summary>Field number for the "identityId" field.</summary>
-    public const int IdentityIdFieldNumber = 1;
-    private string identityId_ = "";
+    /// <summary>Field number for the "isValid" field.</summary>
+    public const int IsValidFieldNumber = 1;
+    private bool isValid_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public string IdentityId {
-      get { return identityId_; }
+    public bool IsValid {
+      get { return isValid_; }
       set {
-        identityId_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+        isValid_ = value;
       }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
-      return Equals(other as UserIdModel);
+      return Equals(other as UserValidModel);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public bool Equals(UserIdModel other) {
+    public bool Equals(UserValidModel other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
       if (ReferenceEquals(other, this)) {
         return true;
       }
-      if (IdentityId != other.IdentityId) return false;
+      if (IsValid != other.IsValid) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override int GetHashCode() {
       int hash = 1;
-      if (IdentityId.Length != 0) hash ^= IdentityId.GetHashCode();
+      if (IsValid != false) hash ^= IsValid.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -392,9 +392,9 @@ namespace ScholarPortal.Protos.Users {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public void WriteTo(pb::CodedOutputStream output) {
-      if (IdentityId.Length != 0) {
-        output.WriteRawTag(10);
-        output.WriteString(IdentityId);
+      if (IsValid != false) {
+        output.WriteRawTag(8);
+        output.WriteBool(IsValid);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -404,8 +404,8 @@ namespace ScholarPortal.Protos.Users {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public int CalculateSize() {
       int size = 0;
-      if (IdentityId.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(IdentityId);
+      if (IsValid != false) {
+        size += 1 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -414,12 +414,12 @@ namespace ScholarPortal.Protos.Users {
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public void MergeFrom(UserIdModel other) {
+    public void MergeFrom(UserValidModel other) {
       if (other == null) {
         return;
       }
-      if (other.IdentityId.Length != 0) {
-        IdentityId = other.IdentityId;
+      if (other.IsValid != false) {
+        IsValid = other.IsValid;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -432,8 +432,8 @@ namespace ScholarPortal.Protos.Users {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
-          case 10: {
-            IdentityId = input.ReadString();
+          case 8: {
+            IsValid = input.ReadBool();
             break;
           }
         }

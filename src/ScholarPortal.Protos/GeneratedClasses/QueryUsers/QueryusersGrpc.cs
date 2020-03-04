@@ -13,17 +13,17 @@ namespace ScholarPortal.Protos.Users {
     static readonly string __ServiceName = "QueryUsers.QueryUsersService";
 
     static readonly grpc::Marshaller<global::ScholarPortal.Protos.Users.UserRequest> __Marshaller_QueryUsers_UserRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::ScholarPortal.Protos.Users.UserRequest.Parser.ParseFrom);
-    static readonly grpc::Marshaller<global::ScholarPortal.Protos.Users.UserIdModel> __Marshaller_QueryUsers_UserIdModel = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::ScholarPortal.Protos.Users.UserIdModel.Parser.ParseFrom);
+    static readonly grpc::Marshaller<global::ScholarPortal.Protos.Users.UserValidModel> __Marshaller_QueryUsers_UserValidModel = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::ScholarPortal.Protos.Users.UserValidModel.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::ScholarPortal.Protos.Users.UserModel> __Marshaller_QueryUsers_UserModel = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::ScholarPortal.Protos.Users.UserModel.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::ScholarPortal.Protos.Users.UsersRequest> __Marshaller_QueryUsers_UsersRequest = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::ScholarPortal.Protos.Users.UsersRequest.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::ScholarPortal.Protos.Users.UsersModel> __Marshaller_QueryUsers_UsersModel = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::ScholarPortal.Protos.Users.UsersModel.Parser.ParseFrom);
 
-    static readonly grpc::Method<global::ScholarPortal.Protos.Users.UserRequest, global::ScholarPortal.Protos.Users.UserIdModel> __Method_IsValidUser = new grpc::Method<global::ScholarPortal.Protos.Users.UserRequest, global::ScholarPortal.Protos.Users.UserIdModel>(
+    static readonly grpc::Method<global::ScholarPortal.Protos.Users.UserRequest, global::ScholarPortal.Protos.Users.UserValidModel> __Method_IsValidUser = new grpc::Method<global::ScholarPortal.Protos.Users.UserRequest, global::ScholarPortal.Protos.Users.UserValidModel>(
         grpc::MethodType.Unary,
         __ServiceName,
         "IsValidUser",
         __Marshaller_QueryUsers_UserRequest,
-        __Marshaller_QueryUsers_UserIdModel);
+        __Marshaller_QueryUsers_UserValidModel);
 
     static readonly grpc::Method<global::ScholarPortal.Protos.Users.UserRequest, global::ScholarPortal.Protos.Users.UserModel> __Method_GetUser = new grpc::Method<global::ScholarPortal.Protos.Users.UserRequest, global::ScholarPortal.Protos.Users.UserModel>(
         grpc::MethodType.Unary,
@@ -49,7 +49,7 @@ namespace ScholarPortal.Protos.Users {
     [grpc::BindServiceMethod(typeof(QueryUsersService), "BindService")]
     public abstract partial class QueryUsersServiceBase
     {
-      public virtual global::System.Threading.Tasks.Task<global::ScholarPortal.Protos.Users.UserIdModel> IsValidUser(global::ScholarPortal.Protos.Users.UserRequest request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::ScholarPortal.Protos.Users.UserValidModel> IsValidUser(global::ScholarPortal.Protos.Users.UserRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -89,19 +89,19 @@ namespace ScholarPortal.Protos.Users {
       {
       }
 
-      public virtual global::ScholarPortal.Protos.Users.UserIdModel IsValidUser(global::ScholarPortal.Protos.Users.UserRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual global::ScholarPortal.Protos.Users.UserValidModel IsValidUser(global::ScholarPortal.Protos.Users.UserRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return IsValidUser(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::ScholarPortal.Protos.Users.UserIdModel IsValidUser(global::ScholarPortal.Protos.Users.UserRequest request, grpc::CallOptions options)
+      public virtual global::ScholarPortal.Protos.Users.UserValidModel IsValidUser(global::ScholarPortal.Protos.Users.UserRequest request, grpc::CallOptions options)
       {
         return CallInvoker.BlockingUnaryCall(__Method_IsValidUser, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::ScholarPortal.Protos.Users.UserIdModel> IsValidUserAsync(global::ScholarPortal.Protos.Users.UserRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::ScholarPortal.Protos.Users.UserValidModel> IsValidUserAsync(global::ScholarPortal.Protos.Users.UserRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return IsValidUserAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::ScholarPortal.Protos.Users.UserIdModel> IsValidUserAsync(global::ScholarPortal.Protos.Users.UserRequest request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::ScholarPortal.Protos.Users.UserValidModel> IsValidUserAsync(global::ScholarPortal.Protos.Users.UserRequest request, grpc::CallOptions options)
       {
         return CallInvoker.AsyncUnaryCall(__Method_IsValidUser, null, options, request);
       }
@@ -160,7 +160,7 @@ namespace ScholarPortal.Protos.Users {
     /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
     public static void BindService(grpc::ServiceBinderBase serviceBinder, QueryUsersServiceBase serviceImpl)
     {
-      serviceBinder.AddMethod(__Method_IsValidUser, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ScholarPortal.Protos.Users.UserRequest, global::ScholarPortal.Protos.Users.UserIdModel>(serviceImpl.IsValidUser));
+      serviceBinder.AddMethod(__Method_IsValidUser, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ScholarPortal.Protos.Users.UserRequest, global::ScholarPortal.Protos.Users.UserValidModel>(serviceImpl.IsValidUser));
       serviceBinder.AddMethod(__Method_GetUser, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ScholarPortal.Protos.Users.UserRequest, global::ScholarPortal.Protos.Users.UserModel>(serviceImpl.GetUser));
       serviceBinder.AddMethod(__Method_GetUsers, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::ScholarPortal.Protos.Users.UsersRequest, global::ScholarPortal.Protos.Users.UsersModel>(serviceImpl.GetUsers));
     }

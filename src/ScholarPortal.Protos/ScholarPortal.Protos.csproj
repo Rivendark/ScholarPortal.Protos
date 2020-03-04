@@ -4,6 +4,7 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageLicenseUrl>MIT</PackageLicenseUrl>
+        <PackageVersion>1.0.1</PackageVersion>
     </PropertyGroup>
     
     <ItemGroup>

@@ -7,7 +7,7 @@ option csharp_namespace = "ScholarPortal.Protos.Users";
 package QueryUsers;
 
 service QueryUsersService {
-    rpc IsValidUser (UserRequest) returns (UserIdModel);
+    rpc IsValidUser (UserRequest) returns (UserValidModel);
     rpc GetUser (UserRequest) returns (UserModel);
     rpc GetUsers (UsersRequest) returns (UsersModel);
 }
@@ -20,8 +20,8 @@ message UsersRequest {
     repeated UserRequest ids = 1;
 }
 
-message UserIdModel {
-    string identityId = 1;
+message UserValidModel {
+    bool isValid = 1;
 }
 
 message UserModel {
